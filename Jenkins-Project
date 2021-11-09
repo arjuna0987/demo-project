@@ -1,0 +1,143 @@
+Developer EC2
+
+    1  yum update -y
+    2  yum install git -y
+    3  git clone https://github.com/arjuna0987/demo-project.git
+    4  ls
+    5  cd demo-project/
+    6  ls
+    7  vi index.html
+    8  git status
+    9  git add .
+   10  git status
+   11  git commit -m "index file commit"
+   12  git commit --amend --reset-author
+   13  git push origin main
+   14  vi index.html
+   15  git add .
+   16  git commit -m "index file "
+   17  git push origin main
+   18  history
+   19  vi /etc/ssh/sshd_config
+   20  ssh root@172.31.2.215
+   21  hostname -i
+   22  history
+
+
+
+Jenkins -- EC2
+
+    1  yum update -y
+    2  yum install java* -y
+    3  wget -O /etc/yum.repos.d/jenkins.repo https://pkg.jenkins.io/redhat-stable/jenkins.repo
+    4  rpm --import https://pkg.jenkins.io/redhat-stable/jenkins.io.key
+    5  yum install jenkins
+    6  yum install epel-release
+    7  sudo amazon-linux-extras install epel
+    8  repository that provides 'daemonize'
+    9  yum install jenkins
+   10  which jenkins
+   11  jenkins --version
+   12  jenkins -version
+   13  systemctl start jenkins
+   14  systemctl status jenkins
+   15  systemctl enable jenkins
+   16  cat /var/lib/jenkins/secrets/initialAdminPassword
+   17  ssh-keygen
+   18  ssh-copy-id -i root@172.31.11.85
+   19  ssh root@172.31.11.85
+   20  yum install git -y
+   21  hostname -i
+   22  passwd root
+   23  vi /etc/ssh/sshd_config
+   24  systemctl start sshd
+   25  systemctl status sshd
+   26  systemctl enable sshd
+   27  systemctl restart sshd
+   28  cat /var/lib/jenkins/workspace/demo-project
+   29  cd /var/lib/jenkins/workspace/demo-project
+   30  ls
+   31  ls -al
+   32  ls
+   33  pwd
+   34  history
+
+
+
+Ansible -- EC2
+
+    1  yum install ansible
+    2  amazon-linux-extras install ansible2
+    3  vi /etc/ansible/hosts
+    4  ssh-keygen
+    5  ssh-copy-id -i root@172.31.1.65
+    6  ssh root@172.31.1.65
+    7  hostname -i
+    8  passwd root
+    9  vi /etc/ssh/sshd_config
+   10  systemctl restart sshd
+   11  mkdir /sourcecode
+   12  cd /sourcecode/
+   13  vi playbook.yml
+   14  hostname -i
+   15  cd /opt/
+   16  ls
+   17  cd /sourcecode/
+   18  ls
+   19  vi playbook.yml
+   20  history
+
+
+
+Web Server EC2
+
+    1  yum update -y
+    2  yum install httpd -y
+    3  systemctl start httpd
+    4  systemctl status httpd
+    5  systemctl enable httpd
+    6  cd /var/www/html/
+    7  hostname -i
+    8  vi /etc/ssh/sshd_config
+    9  passwd root
+   10  cd root
+   11  cd ..
+   12  cd ~
+   13  systemctl restart sshd
+   14  cd /var/www/html/
+   15  ls
+   16  history
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
